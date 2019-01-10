@@ -3,6 +3,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+%matplotlib inline
 
 #read the dataset
 
@@ -31,6 +32,7 @@ simpleLinearRegression.fit(x_train,y_train)
 
 y_predict=simpleLinearRegression.predict(x_test)
 print(x_test)
+print(y_predict)
 
 #sample=np.asarray(5.5)
 #sample.reshape(-1,1)
@@ -42,9 +44,4 @@ print(x_test)
 plt.scatter(x_train,y_train,color='red')
 plt.plot(x_train,simpleLinearRegression.predict(x_train))
          
-
-
-
-
-
 
